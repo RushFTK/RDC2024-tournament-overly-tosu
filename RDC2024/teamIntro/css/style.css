@@ -1,0 +1,59 @@
+@font-face {
+    font-family: "Torus";
+    src: url(../fonts/Torus-Regular.otf);
+}
+
+@font-face {
+    font-family: HighPixel7;
+    src: url(../fonts/HighPixel7.ttf);
+}
+
+/*Display Area*/
+#main {
+    float: left;
+    width: 1920px;
+    height: 1080px;
+    left:0px;
+    top:0px;
+    padding-left:30px;
+    padding-right:30px;
+    padding-top:27px;
+    padding-bottom:29px;
+    position: absolute;
+}
+
+/*Backgroup Videos*/
+#bgVideo { 
+    position: absolute;
+    width: 1920px;
+    height: 1080px;
+    filter: brightness(0.3);
+    left: 0; 
+    top: 0; 
+}
+
+/*Team Info*/
+
+
+
+/*Team Info*/
+#redTeamCard{
+    position:absolute;
+    left:30px;
+    top:931px;
+}
+
+#blueTeamCard{
+    position: absolute;
+}
+
+.teamBanner{
+    width:  120px;
+    height: 120px;
+}
+
+/*Controller Panel*/
+#sideBar{
+    position:absolute; left:1920px; top:0;
+    width: 500px; height: 1080px;
+}
