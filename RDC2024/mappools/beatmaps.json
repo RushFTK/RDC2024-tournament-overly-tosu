@@ -1,0 +1,38 @@
+[
+    {
+        "groups": "A",
+        "beatmaps":[
+            {"bid": 4240785, "mods": "RC" },
+            {"bid": 4241299, "mods": "RC" },
+            {"bid": 4241186, "mods": "RC" },
+            {"bid": 4227675, "mods": "RC" },
+            {"bid": 4245565, "mods": "LN" },
+            {"bid": 4245721, "mods": "LN" },
+            {"bid": 4246348, "mods": "HB" },
+            {"bid": 4211138, "mods": "HB" },
+            {"bid": 4246911, "mods": "TB" },
+            {"bid": 4255050, "mods": "TB", "special":"Inner-TB"}
+        ]
+    },
+    {
+        "groups": "B",
+        "beatmaps":[
+            { "bid": 4246433, "mods": "RC" },
+            { "bid": 4245673, "mods": "RC" },
+            { "bid": 4246519, "mods": "RC" },
+            { "bid": 4243402, "mods": "RC" },
+            { "bid": 4240667, "mods": "LN" },
+            { "bid": 3635347, "mods": "LN" },
+            { "bid": 4245715, "mods": "HB" },
+            { "bid": 4246915, "mods": "HB" , "special":"B-TB"}
+        ]
+    },  
+    {
+        "groups": "C",
+        "beatmaps": [
+            { "bid": 3624720, "mods": "SV" },
+            { "bid": 4245720, "mods": "SV" }       
+        ]
+    }  
+  ]
+  
