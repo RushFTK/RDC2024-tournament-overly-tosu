@@ -6,35 +6,48 @@
     <title>RDC2024 - Mappool picker</title>
 
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/testElements.css">
 </head>
 <body>
     <video id="bgVideo" autoplay loop muted playbackRate=1.0>
         <source src="statics/background.mp4" type="video/mp4">
     </video>
     <div id="main">
-        <div id="mainContainer">
-            <div id="teamRedInfoContainer">
-                <div id="teamRedMemberContainer" class="memberContainer">
-                    <div id="GroupAPlayersContainer"></div>
-                    <div id="GroupBPlayersContainer"></div>
-                </div>
-                <div id="teamRedInfoContainer" >
+        <!--LeftSide-->
+        <div id="teamRedInfoContainer">
+            <div id="teamRedMemberContainer" class="member-container">
+                <div id="teamR-GroupA-MemberContainer"></div>
+                <div id="teamR-GroupB-MemberContainer"></div>
+            <div id="teamRedCardContainer">
+                <div id="teamRedBanner" class="teamBanner"></div>
+                <div id="teamRedScoreContainer" class="scoreContainer"></div>
+                <div id="teamRedName" class="teamName"></div>
             </div>
-            <div id="overallMappoolContainer">
-                <div id="mappoolASeriesContainer" class="mappoolSeriesContainer">
-                    <div class="mappoolTitle">A-Group</div>
-                    <div id="mappoolAContainer" class="mappoolContainer"></div>
-                </div>
-                <div id="mappoolBSeriesContainer" class="mappoolSeriesContainer">
-                    <div class="mappoolTitle">B-Group</div>
-                    <div id="mappoolBContainer" class="mappoolContainer"></div>
-                </div>
-                <div id="mappoolCContainer" class="mappoolSeriesContainer">
-                    <div id="mappoolCContainer" class="mappoolContainer"></div>
-                </div>
+        </div>
+        <!--MidSide-->            
+        <div id="overallMappoolContainer">
+            <div id="mappoolASeriesContainer" class="mappoolSeriesContainer">
+                <div class="mappoolTitle">A-Group</div>
+                <div id="mappoolAContainer" class="mappoolContainer"></div>
             </div>
-            <div id="teamBlueInfoContainer">
-
+            <div id="mappoolBSeriesContainer" class="mappoolSeriesContainer">
+                <div class="mappoolTitle">B-Group</div>
+                <div id="mappoolBContainer" class="mappoolContainer"></div>
+            </div>
+            <div id="mappoolCContainer" class="mappoolSeriesContainer">
+                <div id="mappoolCContainer" class="mappoolContainer"></div>
+            </div>
+        </div>
+        <!--RightSide-->
+        <div id="teamBlueInfoContainer">
+            <div id="teamBlueMemberContainer" class="member-container">
+                <div id="teamB-GroupA-MemberContainer"></div>
+                <div id="teamB-GroupB-MemberContainer"></div>
+            </div>
+            <div id="teamBlueCardContainer">
+                <div id="teamBlueBanner" class="teamBanner"></div>
+                <div id="teamBlueScoreContainer" class="scoreContainer"></div>
+                <div id="teamBlueName" class="teamName"></div>
             </div>
         </div>
     </div>

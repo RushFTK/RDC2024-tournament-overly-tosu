@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RDC2024 - Mappool picker</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/testElements.css">
+</head>
+<body>
+    <video id="bgVideo" autoplay loop muted playbackRate=1.0>
+        <source src="statics/background.mp4" type="video/mp4">
+    </video>
+    <div id="main">
+        <!--LeftSide-->
+        <div id="teamRedInfoContainer">
+            <div id="teamRedMemberContainer" class="member-container">
+                <div id="teamR-GroupA-MemberContainer">
+                    <!--Testing element-->
+                    <div id="teamR-GA-Memeber1">
+                        <div id="teamR-GA-M1-Avatar" class="playerAvatar">
+                            <div class="belongsGroup">A</div>
+                        </div>
+                        <div id="teamR-GA-M1-ID" class="playerID">[GB]V1do</div>
+                    </div>
+                    <div id="teamR-GA-Memeber2">
+                        <div id="teamR-GA-M2-Avatar" class="playerAvatar">
+                            <div class="belongsGroup">A</div>
+                        </div>
+                        <div id="teamR-GA-M2-ID" class="playerID">[GB]V1do</div>
+                    </div>
+                </div>
+                <div id="teamR-GroupB-MemberContainer">
+                    <!--Testing element-->
+                    <div id="teamR-GB-Memeber1">
+                        <div id="teamR-GB-M1-Avatar" class="playerAvatar">
+                            <div class="belongsGroup">A</div>
+                        </div>
+                        <div id="teamR-GB-M1-ID" class="playerID">[GB]V1do</div>
+                    </div>
+                    <div id="teamR-GB-Memeber2">
+                        <div id="teamR-GB-M2-Avatar" class="playerAvatar">
+                            <div class="belongsGroup">B</div>
+                        </div>
+                        <div id="teamR-GB-M2-ID" class="playerID">[GB]V1do</div>
+                    </div>
+                </div>
+            </div>
+            <div id="teamRedCardContainer">
+                <div id="teamRedBanner" class="teamBanner"></div>
+                <div id="teamRedScoreContainer" class="scoreContainer">
+                     <!--Testing element-->
+                    <div id="teamRedScore1" class="score gain"></div>
+                    <div id="teamRedScore2" class="score empty"></div>
+                </div>
+                <div id="teamRedName" class="teamName">队名最长可以取到十二汉字</div>
+            </div>
+        </div>
+        <!--MidSide-->            
+        <div id="overallMappoolContainer">
+            <div id="mappoolASeriesContainer" class="mappoolSeriesContainer">
+                <div class="mappoolTitle">A-Group</div>
+                <div id="mappoolAContainer" class="mappoolContainer">
+                    <!--Tesing element-->
+                    <div id="mapARC1" class="mapContainer">
+                        <div class="beatmapTitle">Artist - Title</div>
+                        <div class="beatmapMapper">Mapper: TBD</div>
+                        <div class="beatmapDiff">Diff: TBD</div>
+                        <div class="beatmapMod">RC</div>
+                    </div>
+                    <div id="mapARC2" class="mapContainer locked">
+                        <div class="beatmapTitle">Artist - Title</div>
+                        <div class="beatmapMapper">Mapper: TBD</div>
+                        <div class="beatmapDiff">Diff: TBD</div>
+                        <div class="beatmapMod">RC</div>
+                    </div>
+                    <div id="mapALN1" class="mapContainer banned">
+                        <div class="beatmapTitle">Artist - Title</div>
+                        <div class="beatmapMapper">Mapper: TBD</div>
+                        <div class="beatmapDiff">Diff: TBD</div>
+                        <div class="beatmapMod">LN</div>
+                    </div>
+                    <div id="mapAHB1" class="mapContainer picked">
+                        <div class="beatmapTitle">Artist - Title</div>
+                        <div class="beatmapMapper">Mapper: TBD</div>
+                        <div class="beatmapDiff">Diff: TBD</div>
+                        <div class="beatmapMod">HB</div>
+                    </div>
+                    <div id="mapATB1" class="mapContainer hidden">
+                        <div class="beatmapTitle">Artist - Title</div>
+                        <div class="beatmapMapper">Mapper: TBD</div>
+                        <div class="beatmapDiff">Diff: TBD</div>
+                        <div class="beatmapMod">TB</div>
+                    </div>
+                </div>
+            </div>
+            <div id="mappoolBSeriesContainer" class="mappoolSeriesContainer">
+                <div class="mappoolTitle">B-Group</div>
+                <div id="mappoolBContainer" class="mappoolContainer"></div>
+            </div>
+            <div id="mappoolCContainer" class="mappoolSeriesContainer">
+                <div id="mappoolCContainer" class="mappoolContainer"></div>
+            </div>
+        </div>
+        <!--RightSide-->
+        <div id="teamBlueInfoContainer">
+            <div id="teamBlueMemberContainer" class="member-container">
+                <div id="teamB-GroupA-MemberContainer">
+                    <!--Testing element-->
+                    <div id="teamB-GA-Memeber1">
+                        <div id="teamB-GA-M1-Avatar" class="playerAvatar">
+                            <div class="belongsGroup">A</div>
+                        </div>
+                        <div id="teamB-GA-M1-ID" class="playerID">[GB]V1do</div>
+                    </div>
+                    <div id="teamB-GA-Memeber2">
+                        <div id="teamB-GA-M2-Avatar" class="playerAvatar">
+                            <div class="belongsGroup">A</div>
+                        </div>
+                        <div id="teamB-GA-M2-ID" class="playerID">[GB]V1do</div>
+                    </div>
+                </div>
+                <div id="teamB-GroupB-MemberContainer">
+                    <!--Testing element-->
+                    <div id="teamB-GB-Memeber1">
+                        <div id="teamB-GB-M1-Avatar" class="playerAvatar">
+                            <div class="belongsGroup">A</div>
+                        </div>
+                        <div id="teamB-GB-M1-ID" class="playerID">[GB]V1do</div>
+                    </div>
+                    <div id="teamB-GB-Memeber2">
+                        <div id="teamB-GB-M2-Avatar" class="playerAvatar">
+                            <div class="belongsGroup">B</div>
+                        </div>
+                        <div id="teamB-GB-M2-ID" class="playerID">[GB]V1do</div>
+                    </div>
+                </div>
+            </div>
+            <div id="teamBlueCardContainer">
+                <div id="teamBlueBanner" class="teamBanner"></div>
+                <div id="teamBlueScoreContainer" class="scoreContainer">
+                     <!--Testing element-->
+                    <div id="teamBlueScore1" class="score gain"></div>
+                    <div id="teamBlueScore2" class="score empty"></div>
+                </div>
+                <div id="teamBlueName" class="teamName">TeamNameCanBe24Character</div>
+            </div>
+        </div>
+    </div>
+
+</body>
