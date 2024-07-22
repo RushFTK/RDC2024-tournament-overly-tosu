@@ -205,7 +205,38 @@
     <div id="sideBar">
         <section class="sideBarColumn">
         <!--Mappools Controller-->
-            <section id="MappoolsController">
+            <section id="actionSelector" class="controllerContainer">
+                <h1>Map Actions:</h1>
+                <div id="currentDisplayAction" class="selectedDisplayer">Red Protect</div>
+                <div class="sideBarButtonContainer">
+                    <button class="sideBarButton" onclick="setNextAction('red','protect')">Red Protect</button>
+                    <button class="sideBarButton" onclick="setNextAction('blue','protect')">Blue Protect</button>
+                    <button class="sideBarButton" onclick="setNextAction('red','ban')">Red Ban</button>
+                    <button class="sideBarButton" onclick="setNextAction('blue','ban')">Blue Ban</button>
+                    <button class="sideBarButton" onclick="setNextAction('red','pick')">Red Pick</button>
+                    <button class="sideBarButton" onclick="setNextAction('blue','pick')">Blue Pick</button>
+                    <button class="sideBarButton" onclick="setNextAction('neutral','lock')">(Un)Lock Maps</button>
+                    <button class="sideBarButton" onclick="setNextAction('neutral','hide')">(Un)Hide Maps</button>
+                    <button class="sideBarButton" onclick="setNextAction('neutral','reset')">Reset</button>
+                </div>
+            </section>
+            <section id="mapSelecto" class="controllerContainer">
+                <h1>Map Selected:</h1>
+                <div id="currentDisplayMap" class="selectedDisplayer">A-RC1</div>
+                <div id="mapSelector-groupA" class="sideBarButtonContainer">
+                    <button class="sideBarButton" onclick="setMap('A','RC1')">A-RC1</button>
+                    <button class="sideBarButton" onclick="setMap('A','RC1')">A-RC2</button>
+                    <button class="sideBarButton" onclick="setMap('A','LN1')">A-LN1</button>
+                    <button class="sideBarButton" onclick="setMap('A','HB1')">A-HB1</button>
+                    <button class="sideBarButton" disabled onclick="setMap('A','TB1')">A-TB1</button>
+                    <button class="sideBarButton" onclick="setMap('A','TB2')">A-TB2</button>
+                </div>
+                <div id="mapSelector-groupB" class="sideBarButtonContainer">
+                    <button class="sideBarButton" onclick="setMap('B','RC1')">A-RC1</button>
+                    <button class="sideBarButton" onclick="setMap('B','LN1')">A-LN1</button>
+                </div>
+                <div id="mapSelector-groupC" class="sideBarButtonContainer">
+                </div>
 
             </section>
         </section>

@@ -1,3 +1,7 @@
+:root {
+    --panel-colour: rgb(231,231,241);
+}
+
 /*Display Area*/
 #main {
     float: left;
@@ -347,10 +351,62 @@
     position:absolute; 
     left:1920px; 
     top:0px; 
-    background-color:var(--grayColour);
+    background-color:var(--panel-colour);
+    display:flex;
+
 }
 
 .sideBarColumn{
     width:250px;
     height: 1080px;
+    border-right: 2px solid black;
+}
+
+.controllerContainer{
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid black;
+}
+
+.controllerContainer h1{
+    font-size: 24px;
+    margin: 10px 0px;
+}
+
+.selectedDisplayer{
+    font-size: 20px;
+    text-align: center;
+    font-weight: bold;
+    margin: 10px 0px;
+}
+
+.sideBarButtonContainer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.sideBarButton{
+    width: 100px;
+    height: 50px;
+    margin: 5px;
+    border: 2px solid black;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif
+}
+
+.sideBarButton:disabled{
+    color:gray;
+}
+
+.sideBarButton:hover:not(:disabled){
+    filter:brightness(150%);
+}
+
+.sideBarButton:active:not(:disabled){
+    filter:brightness(50%);
 }
