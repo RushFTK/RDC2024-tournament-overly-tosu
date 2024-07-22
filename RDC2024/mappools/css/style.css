@@ -180,7 +180,18 @@
     border-color: #fff;
 }
 
+.mapContainerOverly{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+}
+
 .mapContainerInner{
+    position: absolute;
+    top: 0px;
+    left: 0px;
     width: 100%;
     height: 100%;
     background-color: #2a4478;
@@ -208,23 +219,85 @@
 
 .mapContainer.locked{
     background-color:#2a4478;
+}
+
+.mapContainer.locked .mapContainerOverly{
     background-image:url(../statics/lock.png);
     background-size:75px;
     background-repeat: no-repeat;
     background-position-x: center;
+    z-index: 2;
 }
 
 .mapContainer.locked .mapContainerInner{
     background-color: transparent;
     filter:blur(2px);
+    z-index: 1;
 }
 
-.mapContainer.current.picked .mapContainerInner{
+.mapContainer.red-protected{
+    background-color:#2a4478;
+}
+
+.mapContainer.red-protected .mapContainerOverly{
+    background-image:url(../statics/protect-red.png);
+    background-size:75px;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    z-index: 2;    
+}
+
+.mapContainer.red-protected  .mapContainerInner{
+    background-color: transparent;
+    filter:blur(2px);
+    z-index: 1;
+}
+
+.mapContainer.blue-protected{
+    background-color:#2a4478;
+}
+
+.mapContainer.blue-protected .mapContainerOverly{
+    background-image:url(../statics/protect-blue.png);
+    background-size:75px;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    z-index: 2;    
+}
+
+.mapContainer.blue-protected .mapContainerInner{
+    background-color: transparent;
+    filter:blur(2px);
+    z-index: 1;
+}
+
+.phase-pick .mapContainer.red-protected .mapContainerOverly{
+    opacity: 0.5;
+    z-index: 0;  
+}
+
+.phase-pick .mapContainer.red-protected .mapContainerInner{
+    filter: none;
+}
+
+.phase-pick .mapContainer.blue-protected .mapContainerOverly{
+    opacity: 0.5;
+    z-index: 0;  
+}
+
+.phase-pick .mapContainer.blue-protected .mapContainerInner{
+    filter: none;
+}
+
+.mapContainer.picked .mapContainerInner{
     filter:brightness(100%);
-    animation: picked 0.75s linear 0s 6 normal forwards;
 }
 
-@keyframes picked {
+.mapContainer.current .mapContainerInner{
+    animation: current 0.75s linear 0s 6 normal forwards;
+}
+
+@keyframes current {
 	0%,
 	100% {
 		filter:brightness(100%);
@@ -271,6 +344,13 @@
 
 /*Controller Panel*/
 #sideBar{
-    position:absolute; left:1920px; top:0;
-    width: 500px; height: 1080px;
+    position:absolute; 
+    left:1920px; 
+    top:0px; 
+    background-color:var(--grayColour);
+}
+
+.sideBarColumn{
+    width:250px;
+    height: 1080px;
 }

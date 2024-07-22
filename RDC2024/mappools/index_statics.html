@@ -59,12 +59,14 @@
             </div>
         </div>
         <!--MidSide-->            
-        <div id="overallMappoolContainer">
+        <div id="overallMappoolContainer" class="phase-pick">
             <div id="mappoolASeriesContainer" class="mappoolSeriesContainer">
                 <div class="mappoolTitle">A-Group</div>
                 <div id="mappoolAContainer" class="mappoolContainer">
                     <!--Tesing element-->
                     <div id="mapARC1" class="mapContainer">
+                        <div class="mapContainerOverly">
+                        </div>
                         <div class="mapContainerInner">
                             <div class="beatmapTitle">Artist - Title</div>
                             <div class="beatmapMapper">Mapper: TBD</div>
@@ -73,6 +75,8 @@
                         </div>
                     </div>
                     <div id="mapARC2" class="mapContainer locked">
+                        <div class="mapContainerOverly">
+                        </div>
                         <div class="mapContainerInner">
                             <div class="beatmapTitle">Artist - Title</div>
                             <div class="beatmapMapper">Mapper: TBD</div>
@@ -81,6 +85,8 @@
                         </div>
                     </div>
                     <div id="mapALN1" class="mapContainer banned red-action">
+                        <div class="mapContainerOverly">
+                        </div>
                         <div class="mapContainerInner">
                             <div class="beatmapTitle">Artist - Title</div>
                             <div class="beatmapMapper">Mapper: TBD</div>
@@ -89,6 +95,8 @@
                         </div>
                     </div>
                     <div id="mapAHB1" class="mapContainer picked blue-action">
+                        <div class="mapContainerOverly">
+                        </div>
                         <div class="mapContainerInner">
                             <div class="beatmapTitle">Artist - Title</div>
                             <div class="beatmapMapper">Mapper: TBD</div>
@@ -97,6 +105,8 @@
                         </div>
                     </div>
                     <div id="mapATB1" class="mapContainer hidden">
+                        <div class="mapContainerOverly">
+                        </div>
                         <div class="mapContainerInner">
                             <div class="beatmapTitle">Artist - Title</div>
                             <div class="beatmapMapper">Mapper: TBD</div>
@@ -105,6 +115,8 @@
                         </div>
                     </div>
                     <div id="mapATB1" class="mapContainer current picked red-action">
+                        <div class="mapContainerOverly">
+                        </div>
                         <div class="mapContainerInner">
                             <div class="beatmapTitle">Artist - Title</div>
                             <div class="beatmapMapper">Mapper: TBD</div>
@@ -115,8 +127,29 @@
                 </div>
             </div>
             <div id="mappoolBSeriesContainer" class="mappoolSeriesContainer">
-                <div class="mappoolTitle">B-Group</div>
-                <div id="mappoolBContainer" class="mappoolContainer"></div>
+                <div class="mappoolTitle">B-Group</div>       
+                <div id="mappoolBContainer" class="mappoolContainer">
+                    <div id="mapARC1" class="mapContainer red-protected">
+                        <div class="mapContainerOverly">
+                        </div>
+                        <div class="mapContainerInner">
+                            <div class="beatmapTitle">Artist - Title</div>
+                            <div class="beatmapMapper">Mapper: TBD</div>
+                            <div class="beatmapDiff">Diff: TBD</div>
+                            <div class="beatmapMod">RC</div>
+                        </div>
+                    </div>
+                    <div id="mapARC2" class="mapContainer blue-protected">
+                        <div class="mapContainerOverly">
+                        </div>
+                        <div class="mapContainerInner">
+                            <div class="beatmapTitle">Artist - Title</div>
+                            <div class="beatmapMapper">Mapper: TBD</div>
+                            <div class="beatmapDiff">Diff: TBD</div>
+                            <div class="beatmapMod">RC</div>                           
+                        </div>
+                    </div>
+                </div>
             </div>
             <div id="mappoolCContainer" class="mappoolSeriesContainer">
                 <div id="mappoolCContainer" class="mappoolContainer"></div>
@@ -169,6 +202,16 @@
             </div>
         </div>
     </div>
-    <div id="sidebar">
+    <div id="sideBar">
+        <section class="sideBarColumn">
+        <!--Mappools Controller-->
+            <section id="MappoolsController">
+
+            </section>
+        </section>
+        <section class="sideBarColumn">
+            
+        </section>
+
     </div>
 </body>
