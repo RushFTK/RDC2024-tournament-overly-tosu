@@ -52,6 +52,19 @@
     background-image: url("../statics/teamMemberContainer-bg.png");
 }
 
+.player-container{
+    display: flex;
+}
+
+.playerAvatar{
+    height: 45px;
+    width: 45px;
+}
+
+.playerAvatar#member-container{
+    background-color: #ab3f44;
+}
+
 /*Team Info*/
 #teamRedCardContainer{
     position: absolute;
@@ -67,7 +80,7 @@
 .teamBanner{
     height: 110px;
     width: 110px;
-    border-radius: 5px;
+    border-radius: 15px;
     border: 5px;
     border-style: solid;
     border-color: #fff;
@@ -129,6 +142,132 @@
     text-align: right;
     justify-content:flex-end;
 }
+
+
+/*Mappools*/
+#overallMappoolContainer{
+    position: absolute;
+    top: 15px;
+    left: 435px;
+}
+
+.mappoolTitle{
+    background-image: url(../statics/mappoolTitle-bg.png);
+    height: 21px;
+    width: 98px;
+    margin: 15px;
+    padding: 13px 8px 11px 20px;
+    font-family: Torus,'Times New Roman', Times, serif;
+    font-size: 6;
+    color:#ff8933;
+}
+
+.mappoolContainer{
+    display: flex;
+    width: 1050px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.mapContainer{
+    position:relative;
+    width: 495px;
+    Height: 75px;
+    margin: 12px;
+    color:#fff;
+    border-width: 3px;
+    border-style: solid;
+    border-color: #fff;
+}
+
+.mapContainerInner{
+    width: 100%;
+    height: 100%;
+    background-color: #2a4478;
+}
+
+.mapContainer.red-action{
+    border-width: 6px;
+    margin: 9px;
+    border-color: #ab3f44;
+}
+
+.mapContainer.blue-action{
+    border-width: 6px;
+    margin: 9px;
+    border-color: #00b7ee;
+}
+
+.mapContainer.banned .mapContainerInner{
+    filter:grayscale(100%);
+}
+
+.mapContainer.picked .mapContainerInner{
+    filter:brightness(50%)
+}
+
+.mapContainer.locked{
+    background-color:#2a4478;
+    background-image:url(../statics/lock.png);
+    background-size:75px;
+    background-repeat: no-repeat;
+    background-position-x: center;
+}
+
+.mapContainer.locked .mapContainerInner{
+    background-color: transparent;
+    filter:blur(2px);
+}
+
+.mapContainer.current.picked .mapContainerInner{
+    filter:brightness(100%);
+    animation: picked 0.75s linear 0s 6 normal forwards;
+}
+
+@keyframes picked {
+	0%,
+	100% {
+		filter:brightness(100%);
+	}
+
+	50%{
+		filter:brightness(200%);
+	}
+}
+
+.mapContainer.hidden{
+    display: none;
+}
+
+.beatmapTitle{
+    position: absolute;
+    left: 15px;
+    top: 16px;
+}
+
+.beatmapMapper{
+    position: absolute;
+    left: 15px;
+    top: 45px;
+}
+
+.beatmapDiff{
+    position: absolute;
+    left: 180px;
+    top: 44px;
+}
+
+.beatmapMod{
+    position: absolute;
+    left:390px;
+    top:15px;
+    width: 48px;
+    height: 25px;
+    padding: 10px 21px;
+    text-align: center;
+    background-image:url(../statics/mod-bg.png)
+}
+
 
 /*Controller Panel*/
 #sideBar{
